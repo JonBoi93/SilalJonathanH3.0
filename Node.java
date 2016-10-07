@@ -11,6 +11,13 @@ public class Node
 			next = null;
 			previous = null;
 		}
+// Constructor of data, previous, and next
+		public Node(String Data, Node Previous, Node Next)
+		{
+			data = Data;
+			previous = Previous;
+			next = Next;
+		}
 
 }
 
