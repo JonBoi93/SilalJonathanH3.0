@@ -18,6 +18,41 @@ public class Node
 			previous = Previous;
 			next = Next;
 		}
+// Accesssors
+		public String getData()
+		{
+			return data;
+		}
+		public Node getNext()
+		{
+			return next;
+		}
+		public Node getPrevious()
+		{
+		    return previous;
+		}
+		// Setters
+		public void setData(String Data)
+			{
+				data = Data;
+			}
+		public void setNext(Node Next)
+		{
+			next = Next;
+		}
+		public void setPrevious(Node Previous)
+			{
+				previous = Previous;
+			}
+			// Compare your data
+			public int Compare(String Data)
+			{
+				return Data.compareTo(data);
+			}
+			public int Compare(Node Compared)
+			{
+				return Compared.getData().compareTo(data);
+			}
 
 }
 
